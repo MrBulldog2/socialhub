@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Социален хъб - За нас</title>
+    <style>
+        /* Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        /* Global Variables */
+        :root {
+            --primary-color: #007BFF;
+            --secondary-color: #0056b3;
+            --background-color: #f4f4f4;
+            --text-color: #333;
+            --header-bg: linear-gradient(90deg, #222, #444);
+            --footer-bg: linear-gradient(90deg, #222, #444);
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ✅ Header */
+        header {
+            background: var(--header-bg);
+            color: white;
+            padding: 1rem 0rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            height: 80px;
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        /* ✅ Navigation */
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+        /* ✅ Main Content */
+        .content {
+            padding-top: 50px;
+            padding-bottom: 2rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .section-services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .section-services .content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .section-services h2 {
+            font-size: 26px;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 15px;
+        }
+
+        .section-services p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .section-services .image {
+            flex: 1;
+        }
+
+        .section-services .image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        /* ✅ Footer */
+        footer {
+            background: var(--footer-bg);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* ✅ Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem;
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 0.5rem;
+                margin-top: 1rem;
+            }
+
+            .section-services {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section-services .content {
+                padding-right: 0;
+            }
+
+            .section-services .image img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ✅ Header -->
+    <header>
+        <div class="logo">
+            <img src="SOCIAL-HUB-LOGO.png" alt="Logo">
+        </div>
+        <h1>Социален хъб</h1>
+        <nav>
+            <a href="index.html">Начало</a>
+            <a href="about.html">За нас</a>
+            <a href="services.html">Услуги</a>
+            <a href="contact.html">Контакти</a>
+        </nav>
+    </header>
+
+    <!-- ✅ Main Content -->
+    <div class="content">
+        <div class="container">
+            <section class="section-services">
+                <div class="content">
+                    <h2>За нас</h2>
+                    <p>
+                        "Социален хъб" е иновационен проект, който предоставя уникална възможност на малки и средни бизнеси,
+                        местни производители и занаятчии да покажат своите продукти на по-широка аудитория.
+                    </p>
+                    <p>
+                        Платформата има за цел да създаде устойчиви връзки между производителите и техните клиенти чрез онлайн присъствие и
+                        маркетингова подкрепа.
+                    </p>
+                    <p>
+                        Освен търговска дейност, ние акцентираме и на социалната отговорност – всяка покупка, направена чрез платформата, ще 
+                        подкрепя различни социални каузи, като подпомагане на хора в неравностойно положение или социални инициативи за местни общности.
+                    </p>
+                </div>
+
+                <div class="image">
+                    <img src="./download (1).jpg" alt="Social Hub Image">
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- ✅ Footer -->
+    <footer>
+        <p>&copy; 2025 Социален хъб. Всички права запазени.</p>
+    </footer>
+
+</body>
+
+</html>

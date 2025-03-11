@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Социален хъб</title>
+    <style>
+        /* Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        :root {
+            --primary-color: #007BFF;
+            --secondary-color: #0056b3;
+            --background-color: #f4f4f4;
+            --text-color: #333;
+            --header-bg: linear-gradient(90deg, #222, #444);
+            --footer-bg: linear-gradient(90deg, #222, #444);
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: var(--header-bg);
+            color: white;
+            padding: 1rem 0rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            height: 80px;
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+        /* ✅ Content */
+        .content {
+            padding: 50px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-services .content {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .section-services h2 {
+            font-size: 26px;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 15px;
+        }
+
+        .section-services p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .section-services .image {
+            flex: 1;
+        }
+
+        .section-services .image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ✅ Footer */
+        footer {
+            background: linear-gradient(90deg, #222, #444);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            margin-top: 40px;
+            position: relative;
+        }
+
+        /* ✅ Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 15px;
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            .section-services {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .section-services .content {
+                padding-right: 0;
+            }
+
+            .section-services .image img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ✅ Header -->
+    <header>
+        <div class="logo">
+            <img src="SOCIAL-HUB-LOGO.png" alt="Logo"> <!-- Replace with actual logo path -->
+        </div>
+        <h1>Социален хъб</h1>
+        <nav>
+            <a href="index.html">Начало</a>
+            <a href="about.html">За нас</a>
+            <a href="services.html">Услуги</a>
+            <a href="contact.html">Контакти</a>
+        </nav>
+    </header>
+
+    <!-- ✅ Main Content -->
+    <div class="content">
+        <section class="section-services">
+            <div class="content">
+                <h2>Начало</h2>
+                <p>
+                    Добре дошли в "Социален хъб" – платформа, създадена с цел да подкрепя местните производители и занаятчии,
+                    като им предоставя възможност да разширят своя пазар и да достигнат до нови клиенти.
+                </p>
+                <p>
+                    Ние вярваме в силата на социалното предприемачество и се стремим да изградим мрежа, която да обединява хора и бизнеси
+                    с обща кауза – подпомагане на местните производители и развитие на социално отговорни инициативи.
+                </p>
+                <p>
+                    Платформата е място, където можете да откриете уникални продукти, направени с любов и внимание към
+                    детайла, като същевременно подкрепяте социални каузи.
+                </p>
+            </div>
+
+            <div class="image">
+                <img src="./download.jpg" alt="Social Hub Image">
+            </div>
+        </section>
+    </div>
+
+    <!-- ✅ Footer -->
+    <footer>
+        <p>&copy; 2025 Социален хъб. Всички права запазени.</p>
+    </footer>
+
+</body>
+
+</html>
